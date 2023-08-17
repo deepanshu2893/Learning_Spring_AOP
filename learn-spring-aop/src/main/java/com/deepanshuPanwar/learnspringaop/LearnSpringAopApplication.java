@@ -14,16 +14,18 @@ public class LearnSpringAopApplication implements CommandLineRunner {
 
 	private BusinessService1 businessService1;
 
-	public LearnSpringAopApplication (BusinessService1 businessService1){
+	public LearnSpringAopApplication(BusinessService1 businessService1) {
 		this.businessService1 = businessService1;
 	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(LearnSpringAopApplication.class, args);
+
 	}
+
 
 	@Override
 	public void run(String... args) throws Exception {
-		logger.info("value returned is {}", businessService1.calculateMax());
+
 	}
 }
