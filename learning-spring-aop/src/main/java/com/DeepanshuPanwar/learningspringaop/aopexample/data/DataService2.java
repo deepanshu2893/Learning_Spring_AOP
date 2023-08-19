@@ -1,10 +1,12 @@
 package com.DeepanshuPanwar.learningspringaop.aopexample.data;
 
+import com.DeepanshuPanwar.learningspringaop.aopexample.annotations.TrackTime;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class DataService2 {
 
+    @TrackTime
     public int [] retrieveData() {
 
         try {

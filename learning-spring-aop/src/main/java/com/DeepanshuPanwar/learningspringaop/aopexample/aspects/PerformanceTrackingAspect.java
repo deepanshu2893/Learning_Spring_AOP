@@ -15,7 +15,9 @@ public class PerformanceTrackingAspect {
     private Logger logger = LoggerFactory.getLogger(getClass());
 
 
-    @Around("com.DeepanshuPanwar.learningspringaop.aopexample.aspects.CommonPointCutConfig.businessAndDataPackageConfig()")
+//    @Around("com.DeepanshuPanwar.learningspringaop.aopexample.aspects.CommonPointCutConfig.businessAndDataPackageConfig()")
+
+    @Around("com.DeepanshuPanwar.learningspringaop.aopexample.aspects.CommonPointCutConfig.trackTimeAnnotation()")
     public Object findExecutionTime(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         // Start a timer
         long startTimeMillis = System.currentTimeMillis();
