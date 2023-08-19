@@ -1,5 +1,8 @@
 package com.DeepanshuPanwar.learningspringaop.aopexample.data;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class DataService1 {
 
     public int [] retrieveData() {
